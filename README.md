@@ -1,7 +1,16 @@
-- [행렬의 덧셈](https://school.programmers.co.kr/learn/courses/30/lessons/12950)
+- `substring`: 문자열 자르기
 
-- [최대공약수와 최소공배수](https://school.programmers.co.kr/learn/courses/30/lessons/12940)
+- `reduce`: 부수효과 없음
 
-- [삼총사](https://school.programmers.co.kr/learn/courses/30/lessons/131705)
+- [...String(n)].reverse().map(Number);
 
-- [시저 암호](https://school.programmers.co.kr/learn/courses/30/lessons/12926)
+---
+
+- 어떤 수의 약수의 개수가 홀수인 경우는 그 수가 완전 제곱수일 때뿐
+- 제곱근이 정수면 약수의 개수가 홀수
+
+```
+  Number.isInteger(Math.sqrt(i))
+```
+
+---
