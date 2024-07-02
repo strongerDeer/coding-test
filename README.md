@@ -14,3 +14,5 @@
 ```
 
 ---
+
+[20230702 1_4.js] https://school.programmers.co.kr/learn/courses/30/lessons/12950
