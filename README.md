@@ -16,3 +16,12 @@
 ---
 
 [20230702 1_4.js] https://school.programmers.co.kr/learn/courses/30/lessons/12950
+
+---
+
+`sort()`는 기본적으로 문자열 정렬을 수행.
+숫자 정렬을 위해서는 비교함수가 필요!
+
+```
+  [1, 4, 2].sort((a, b) => a - b);
+```
