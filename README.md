@@ -25,3 +25,43 @@
 ```
   [1, 4, 2].sort((a, b) => a - b);
 ```
+
+---
+
+최대 공약수(GCD:Greatest Common Divisor): 유클리드 알고리즘
+
+```js
+function gcd(a, b) {
+  while (b !== 0) {
+    let temp = b;
+    b = a % b;
+    a = temp;
+  }
+  return a;
+}
+```
+
+```js
+function gcd(a, b) {
+  const min = Math.min(a, b);
+  for (let i = min; i > 0; i--) {
+    if (a % i === 0 && b % i === 0) {
+      return i;
+    }
+  }
+}
+```
+
+최대 공배수(LCM: Least Common Multiple)
+
+```js
+let LCM = (a * b) / GCD;
+```
+
+- 진수 표현
+
+```js
+(10).toString(2); // 10을 2진수로 표현
+parseInt(10, 2); // 10을 2진수로 해석. 10진수로 표현
+parseInt(10, 2).toString(3); // 10을 2진수로 해석. 3진수로 표현
+```
