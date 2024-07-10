@@ -65,3 +65,9 @@ let LCM = (a * b) / GCD;
 parseInt(10, 2); // 10을 2진수로 해석. 10진수로 표현
 parseInt(10, 2).toString(3); // 10을 2진수로 해석. 3진수로 표현
 ```
+
+- 배열 중복제거
+
+```
+[...new Set(array)]
+```
