@@ -98,3 +98,35 @@ parseInt(10, 2).toString(3); // 10을 2진수로 해석. 3진수로 표현
   ---------------------------
   AND 연산 결과 = 00001000 (2진수) = 8 (10진수)
 ```
+
+- 약수 개수 구하기
+
+```
+  function countDivisors(n) {
+    let count = 0;
+    for (let i = 1; i * i <= n; i++) {
+      if (n % i === 0) {
+        if (i * i === n) {
+          count += 1;
+        } else {
+          count += 2;
+        }
+      }
+    }
+    return count;
+  }
+```
+
+- 소수판별
+
+```
+  // 소수판별
+  function isPrime(n) {
+    if (n < 2) return false;
+    for (let i = 2; i * i <= n; i++) {
+      if (n % i === 0) return false;
+    }
+    return true;
+  }
+
+```
