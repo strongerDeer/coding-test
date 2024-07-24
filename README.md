@@ -130,3 +130,54 @@ parseInt(10, 2).toString(3); // 10을 2진수로 해석. 3진수로 표현
   }
 
 ```
+
+- 행렬 곱셈
+
+```js
+// 3 * 2
+// r1 * c1
+[
+  [1, 4],
+  [3, 2],
+  [4, 1],
+]
+// 2 * 2
+// r2 * c2
+[
+  [3, 3],
+  [3, 3],
+]
+// =>
+// 3 * 2
+// r1 * c2
+[
+  [15, 15],
+  [15, 15],
+  [15, 15]
+]
+
+```
+
+```
+function solution(arr1, arr2) {
+  const r1 = arr1.length;
+  const c1 = arr1[0].length;
+  const c2 = arr2[0].length;
+
+  const answer = [];
+  for (let i = 0; i < r1; i++) {
+    answer.push(new Array(c2).fill(0));
+  }
+
+  for (let i = 0; i < r1; i++) {
+    for (let j = 0; j < c2; j++) {
+      for (let k = 0; k < c1; k++) {
+        answer[i][j] += arr1[i][k] * arr2[k][j];
+      }
+    }
+  }
+  return answer;
+}
+```
+
+- 중복을 포함하지 않는다: Set 생각하기.
