@@ -52,7 +52,7 @@ function gcd(a, b) {
 }
 ```
 
-최대 공배수(LCM: Least Common Multiple)
+최대 수(LCM: Least Common Multiple)
 
 ```js
 let LCM = (a * b) / GCD;
